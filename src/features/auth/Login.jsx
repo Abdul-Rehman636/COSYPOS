@@ -16,12 +16,14 @@ const Login = () => {
         </h2>
 
         <div className="md:h-[697px] h-auto lg:w-[758px] md:w-[680px] w-[90%] bg-[#292C2D] lg:rounded-[50px] md:rounded-3xl rounded-2xl flex flex-col justify-center items-center lg:mt-24 md:mt-16 mt-8 md:py-0 py-8">
-          <h3 className="text-[45px] font-medium text-white">Login!</h3>
+          <h3 className="text-[45px] font-medium text-white text-center">
+            Login!
+          </h3>
           <p className="text-[16px] font-normal text-white md:mt-8 mt-5 text-center md:w-auto w-[90%]">
             Please enter your credentials below to continue
           </p>
 
-          <form action="" className="md:w-[78%] w-[90%] md:mt-14 mt-12">
+          <form action="" className="md:w-[69%] w-[90%] md:mt-14 mt-12">
             <div className="flex flex-col">
               <label className="text-[16px] font-medium text-white">
                 Username

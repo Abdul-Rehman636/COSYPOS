@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Dashboard",
+    "path": "/"
+  },
+  {
+    "name": "Menu",
+    "path": "/menu"
+  },
+  {
+    "name": "Staff",
+    "path": "/staff"
+  },
+  {
+    "name": "Inventory",
+    "path": "/inventory"
+  },
+  {
+    "name": "Reports",
+    "path": "/reports"
+  },
+  {
+    "name": "Order/Table",
+    "path": "/order-table"
+  },
+  {
+    "name": "Reservation",
+    "path": "/reservation"
+  }
+]

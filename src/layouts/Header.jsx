@@ -3,9 +3,9 @@ import Bell from "../assets/svgs/Bell.svg";
 import SamplePic from "../assets/images/sample-profile-pic.jpg";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ openSidebar, toggleSidebar }) => {
   return (
-    <div className="lg:w-auto w-[90%] mx-auto lg:pt-11 pt-4 mr-14">
+    <div className="lg:w-auto w-[90%] mx-auto lg:pt-11 pt-4 lg:mr-14">
       <div className="flex justify-between items-center font-poppins">
         <p className="lg:hidden block text-[20px] font-semibold text-[#FAC1D9]">
           COSYPOS
@@ -37,20 +37,20 @@ const Header = () => {
               className="w-full h-full rounded-full"
             />
           </span>
-          <input
-            type="checkbox"
-            id="checkbox"
-            className="lg:hidden block cursor-pointer"
-          />
-          <label
-            for="checkbox"
-            class="toggle"
-            className="lg:hidden block cursor-pointer"
-          >
-            <div class="bars" id="bar1"></div>
-            <div class="bars" id="bar2"></div>
-            <div class="bars" id="bar3"></div>
-          </label>
+          <span className="cursor-pointer">
+            <input
+              type="checkbox"
+              id="checkbox"
+              checked={openSidebar}
+              onChange={toggleSidebar}
+              className="hidden"
+            />
+            <label htmlFor="checkbox" className="toggle">
+              <div className="bars" id="bar1"></div>
+              <div className="bars" id="bar2"></div>
+              <div className="bars" id="bar3"></div>
+            </label>
+          </span>
         </div>
       </div>
       <span className="lg:hidden flex gap-2.5 mt-4">
@@ -61,7 +61,7 @@ const Header = () => {
           <img
             src={LeftArrow}
             alt="LeftArrow"
-            className="w-[7.5px] h-[6.75px]"
+            className="lg:w-[7.5px] w-[8px] lg:h-[6.75px] h-[8.25px]"
           />
         </NavLink>
 

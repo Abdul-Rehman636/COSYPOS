@@ -9,7 +9,7 @@
   },
   {
     "name": "Staff",
-    "path": "/staff"
+    "path": "/staff-management"
   },
   {
     "name": "Inventory",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Order/Table",
-    "path": "/order-table"
+    "path": "/order-tables"
   },
   {
     "name": "Reservation",

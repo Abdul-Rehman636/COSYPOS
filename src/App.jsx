@@ -18,15 +18,23 @@ function App() {
 
   return (
     <div className="bg-[#111315] min-h-screen h-auto flex gap-12">
-      <div
-        className={`lg:block ${
-          openSidebar ? "block" : "hidden"
-        } max-[1024px]:absolute max-[1024px]:w-full max-[1024px]:top-[4.5rem]`}
-      >
-        <Sidebar />
-      </div>
-      <div className="lg:w-[90%] w-full">
-        <Header openSidebar={openSidebar} toggleSidebar={toggleSidebar} />
+      {routes === PrivateRoutes ? (
+        <div
+          className={`lg:block ${
+            openSidebar ? "block" : "hidden"
+          } max-[1024px]:absolute max-[1024px]:w-full max-[1024px]:top-[4.5rem]`}
+        >
+          <Sidebar />
+        </div>
+      ) : (
+        ""
+      )}
+      <div className={`${routes === PrivateRoutes ? "lg:w-[90%]" : ""} w-full`}>
+        {routes === PrivateRoutes ? (
+          <Header openSidebar={openSidebar} toggleSidebar={toggleSidebar} />
+        ) : (
+          ""
+        )}
         <Routes>
           {routes.map((route, index) => (
             <Route

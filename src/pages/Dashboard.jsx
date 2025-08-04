@@ -1,7 +1,9 @@
+import Stats from "../components/dashboard/Stats";
+
 const Dashboard = () => {
   return (
     <div>
-      <div className="text-white">Dashboard</div>
+      <Stats />
     </div>
   );
 };

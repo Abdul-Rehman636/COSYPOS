@@ -3,7 +3,7 @@ import TabIcon from "../assets/svgs/Tab-Icon.svg";
 import LogoutIcon from "../assets/svgs/Logout.svg";
 import NavigationTabs from "../assets/data/NavigationTabs.json";
 
-const Sidebar = () => {
+const Sidebar = ({ handleCloseSidebar }) => {
   const location = useLocation();
 
   return (
@@ -23,6 +23,7 @@ const Sidebar = () => {
               <div key={index} className="flex flex-col items-center w-full">
                 <NavLink
                   to={navTab.path}
+                  onClick={handleCloseSidebar}
                   className={`${
                     activeTab ? "bg-[#FAC1D9]" : ""
                   } lg:w-[117px] w-[90%] h-[84px] rounded-[7.4px] flex flex-col justify-center items-center gap-1.5`}
@@ -40,7 +41,7 @@ const Sidebar = () => {
                 </NavLink>
 
                 {!lastObject ? (
-                  <div className="w-[88px] border-[0.75px] border-[#3D4142] my-3"></div>
+                  <div className="w-[50%] lg:w-[88px] border-[0.75px] border-[#3D4142] my-3"></div>
                 ) : (
                   ""
                 )}

@@ -1,7 +1,7 @@
 const Reservation = () => {
   return (
     <div>
-      <div>Reservation</div>
+      <div className="text-white">Reservation</div>
     </div>
   );
 };

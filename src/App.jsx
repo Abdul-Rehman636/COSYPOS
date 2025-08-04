@@ -16,6 +16,12 @@ function App() {
     setOpenSidebar((prev) => !prev);
   };
 
+  const handleCloseSidebar = () => {
+    setTimeout(() => {
+      setOpenSidebar(false);
+    }, 300);
+  };
+
   return (
     <div className="bg-[#111315] min-h-screen h-auto flex gap-12">
       {routes === PrivateRoutes ? (
@@ -24,7 +30,7 @@ function App() {
             openSidebar ? "block" : "hidden"
           } max-[1024px]:absolute max-[1024px]:w-full max-[1024px]:top-[4.5rem]`}
         >
-          <Sidebar />
+          <Sidebar handleCloseSidebar={handleCloseSidebar} />
         </div>
       ) : (
         ""

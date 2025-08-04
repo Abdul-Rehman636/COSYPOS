@@ -1,7 +1,7 @@
 const Inventory = () => {
   return (
     <div>
-      <div>Inventory</div>
+      <div className="text-white">Inventory</div>
     </div>
   );
 };

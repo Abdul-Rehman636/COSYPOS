@@ -1,7 +1,7 @@
 const Menu = () => {
   return (
     <div>
-      <div>Menu</div>
+      <div className="text-white">Menu</div>
     </div>
   );
 };

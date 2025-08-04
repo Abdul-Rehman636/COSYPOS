@@ -29,8 +29,8 @@ const Header = ({ openSidebar, toggleSidebar }) => {
       : "";
 
   return (
-    <div className="lg:w-auto w-[90%] mx-auto lg:pt-11 pt-4 lg:mr-14">
-      <div className="flex justify-between items-center font-poppins">
+    <div className="lg:w-auto w-[90%] mx-auto font-poppins lg:pt-11 pt-4 lg:mr-14">
+      <div className="flex justify-between items-center">
         <p className="lg:hidden block text-[20px] font-semibold text-[#FAC1D9]">
           COSYPOS
         </p>
@@ -86,6 +86,7 @@ const Header = ({ openSidebar, toggleSidebar }) => {
       <span className="lg:hidden flex gap-2.5 mt-4">
         <NavLink
           to="#"
+          onClick={() => navigate(-1)}
           className="w-[22px] h-[22px] bg-[#292C2D] rounded-full flex justify-center items-center"
         >
           <img

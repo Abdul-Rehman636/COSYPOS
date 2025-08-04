@@ -1,0 +1,17 @@
+[
+  {
+    "type": "Daily Sales",
+    "price": "$2k",
+    "date": "9 Feburary 2024"
+  },
+  {
+    "type": "Monthly Revenue",
+    "price": "$55k",
+    "from": "1 Jan",
+    "to": "1 Feb"
+  },
+  {
+    "type": "Table Occupacy",
+    "tables": "25"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Chicken Parmesan",
+    "stock": 13,
+    "price": 55.0,
+    "serving": 3,
+    "orders": 6,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 2,
+    "name": "Beef Stroganoff",
+    "stock": 0,
+    "price": 62.0,
+    "serving": 11,
+    "orders": 15,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 3,
+    "name": "Grilled Salmon",
+    "stock": 13,
+    "price": 70.0,
+    "serving": 8,
+    "orders": 21,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 4,
+    "name": "Vegetable Lasagna",
+    "stock": 13,
+    "price": 48.0,
+    "serving": 24,
+    "orders": 35,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 5,
+    "name": "Butter Chicken",
+    "stock": 0,
+    "price": 60.0,
+    "serving": 14,
+    "orders": 19,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 6,
+    "name": "Shrimp Alfredo Pasta",
+    "stock": 0,
+    "price": 68.0,
+    "serving": 33,
+    "orders": 25,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 7,
+    "name": "BBQ Ribs",
+    "stock": 13,
+    "price": 75.0,
+    "serving": 5,
+    "orders": 7,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 8,
+    "name": "Margherita Pizza",
+    "stock": 0,
+    "price": 45.0,
+    "serving": 9,
+    "orders": 13,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 9,
+    "name": "Spicy Tuna Roll",
+    "stock": 13,
+    "price": 50.0,
+    "serving": 7,
+    "orders": 9,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lamb Chops",
+    "stock": 0,
+    "price": 80.0,
+    "serving": 11,
+    "orders": 16,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 11,
+    "name": "Chicken Caesar Salad",
+    "stock": 0,
+    "price": 40.0,
+    "serving": 17,
+    "orders": 21,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  },
+  {
+    "id": 12,
+    "name": "Thai Green Curry",
+    "stock": 13,
+    "price": 58.0,
+    "serving": 23,
+    "orders": 28,
+    "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg"
+  }
+]

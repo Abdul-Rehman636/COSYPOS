@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import DishesData from "../../assets/data/PopularDishes.json";
 
-const PopularDishes = () => {
+const PopularDishes = ({ type }) => {
   return (
     <div className="md:h-[466px] overflow-y-auto custom-scrollbar h-[429px] bg-[#292C2D] rounded-[10px] font-poppins">
       <div>
@@ -30,16 +30,24 @@ const PopularDishes = () => {
                     <p className="md:text-[16px] text-xs font-medium text-white">
                       {dish.name}
                     </p>
-                    <p className="md:text-[16px] text-xs font-normal text-[#FAC1D9]">
+                    <p
+                      className={`md:text-[16px] text-xs font-normal ${
+                        dish.stock > 0 ? "text-[#FAC1D9]" : "text-[#F60000]"
+                      }`}
+                    >
                       {dish.stock > 0 ? "In Stock" : "Out of stock"}
                     </p>
                   </div>
                   <div className="flex justify-between">
                     <p className="md:text-[14px] text-xs font-normal text-[#777979]">
-                      Serving : 01 person
+                      {type === "Dishes with servings"
+                        ? `Serving : ${dish.serving} person`
+                        : `Order : x${dish.orders} $${
+                            dish.price * dish.orders
+                          }`}
                     </p>
                     <p className="md:text-[14px] text-xs font-normal text-white">
-                      $55.00
+                      ${dish.price}
                     </p>
                   </div>
                 </div>

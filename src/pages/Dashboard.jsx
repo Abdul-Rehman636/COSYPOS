@@ -10,7 +10,7 @@ const Dashboard = () => {
         <PopularDishes type="Dishes with servings" />
         <PopularDishes type="Dishes with orders" />
       </div>
-      <div className="max-[1024px]:w-[90%] max-[1024px]:mx-auto lg:mr-16 lg:mt-12 md:mt-8 mt-7">
+      <div className="max-[1024px]:w-[95%] max-[1024px]:ml-auto lg:mr-16 lg:mt-12 md:mt-8 mt-7">
         <Overview />
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Download from "../../assets/svgs/Download.svg";
+import OverviewChart from "./Chart";
 
 const Overview = () => {
   const [activeTab, setActiveTab] = useState("Monthly");
@@ -64,6 +65,9 @@ const Overview = () => {
             Export
           </button>
         </div>
+      </div>
+      <div className="md:h-[360px] h-[240px] w-full md:mt-4 mt-2">
+        <OverviewChart />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import html2canvas from "html2canvas";
 import Download from "../../assets/svgs/Download.svg";
 import OverviewChart from "./Chart";
 
@@ -26,13 +25,13 @@ const Overview = () => {
   };
 
   const handleExport = () => {
-    const section = document.getElementById("chart");
-    html2canvas(section).then((canvas) => {
-      const link = document.createElement("a");
-      link.href = canvas.toDataURL("image/png");
-      link.download = "chart.png";
-      link.click();
-    });
+    const canvas = document.querySelector("canvas");
+    if (!canvas) return;
+    const url = canvas.toDataURL("image/png");
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "chart.png";
+    link.click();
   };
 
   return (
@@ -80,8 +79,8 @@ const Overview = () => {
           </button>
         </div>
       </div>
-      <div id="chart" className="md:h-[360px] h-[240px] w-full md:mt-4 mt-2">
-        <OverviewChart activeTab={activeTab} />
+      <div className="md:h-[360px] h-[240px] w-full md:mt-4 mt-2">
+        <OverviewChart activeTab={activeTab} handleExport={handleExport} />
       </div>
     </div>
   );

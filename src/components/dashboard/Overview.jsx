@@ -1,4 +1,5 @@
 import { useState } from "react";
+import html2canvas from "html2canvas";
 import Download from "../../assets/svgs/Download.svg";
 import OverviewChart from "./Chart";
 
@@ -22,6 +23,16 @@ const Overview = () => {
 
   const handlePeriod = (name) => {
     setActiveTab(name);
+  };
+
+  const handleExport = () => {
+    const section = document.getElementById("chart");
+    html2canvas(section).then((canvas) => {
+      const link = document.createElement("a");
+      link.href = canvas.toDataURL("image/png");
+      link.download = "chart.png";
+      link.click();
+    });
   };
 
   return (
@@ -60,14 +71,17 @@ const Overview = () => {
               );
             })}
           </div>
-          <button className="flex items-center gap-2.5 md:text-[16px] text-[12px] font-medium text-[#FAC1D9] md:py-[14px] py-2.5 md:px-[22px] px-[15px] border-[0.75px] border-[#FAC1D9] rounded-[7.5px] cursor-pointer hover:opacity-85">
+          <button
+            className="flex items-center gap-2.5 md:text-[16px] text-[12px] font-medium text-[#FAC1D9] md:py-[14px] py-2.5 md:px-[22px] px-[15px] border-[0.75px] border-[#FAC1D9] rounded-[7.5px] cursor-pointer hover:opacity-85"
+            onClick={handleExport}
+          >
             <img src={Download} alt="Download-Icon" />
             Export
           </button>
         </div>
       </div>
-      <div className="md:h-[360px] h-[240px] w-full md:mt-4 mt-2">
-        <OverviewChart />
+      <div id="chart" className="md:h-[360px] h-[240px] w-full md:mt-4 mt-2">
+        <OverviewChart activeTab={activeTab} />
       </div>
     </div>
   );

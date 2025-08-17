@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -21,7 +22,15 @@ ChartJS.register(
   Legend
 );
 
-const OverviewChart = () => {
+const OverviewChart = ({ activeTab }) => {
+  const [period, setPeriod] = useState("monthly");
+
+  useEffect(() => {
+    setPeriod(activeTab.toLowerCase());
+  }, [activeTab]);
+
+  const chartData = OverviewData[period];
+
   const options = {
     responsive: true,
     maintainAspectRatio: false,
@@ -108,35 +117,11 @@ const OverviewChart = () => {
     },
   };
 
-  const data = {
-    labels: OverviewData.labels,
-    datasets: [
-      {
-        label: "Sales",
-        data: OverviewData.datasets[0].data,
-        borderWidth: window.screen.width <= 640 ? 1.43 : 4,
-        borderColor: "rgba(250, 193, 217, 1)",
-        pointBackgroundColor: "rgba(250, 193, 217, 1)",
-        fill: false,
-        tension: 0.45,
-      },
-      {
-        label: "Revenue",
-        data: OverviewData.datasets[1].data,
-        borderWidth: window.screen.width <= 640 ? 0.66 : 2,
-        borderColor: "rgba(217, 217, 217, 1)",
-        pointBackgroundColor: "rgba(217, 217, 217, 1)",
-        fill: false,
-        tension: 0,
-      },
-    ],
-  };
-
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#292C2D]">
       <div className="overflow-x-auto xl:overflow-x-hidden">
         <div className="xl:min-w-full min-w-[640px] md:h-[360px] h-[240px]">
-          <Line options={options} data={data} />
+          <Line options={options} data={chartData} />
         </div>
       </div>
     </div>

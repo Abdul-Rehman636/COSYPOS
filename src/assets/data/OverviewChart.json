@@ -1,34 +1,70 @@
 {
-  "labels": [
-    "JAN",
-    "FEB",
-    "MAR",
-    "APR",
-    "MAY",
-    "JUN",
-    "JUL",
-    "AUG",
-    "SEP",
-    "OCT",
-    "NOV",
-    "DEC"
-  ],
-  "datasets": [
-    {
-      "label": "sales",
-      "data": [
-        3000, 2700, 4500, 5000, 3300, 3800, 4700, 4900, 3500, 4800, 3000, 4300
-      ],
-      "borderWidth": 4.34,
-      "borderColor": "rgba(250, 193, 217, 1)"
-    },
-    {
-      "label": "revenue",
-      "data": [
-        2000, 2700, 2200, 3200, 2300, 2800, 2700, 2900, 2500, 2800, 2000, 2900
-      ],
-      "borderWidth": 2.01,
-      "borderColor": "rgba(217, 217, 217, 1)"
-    }
-  ]
+  "monthly": {
+    "labels": [
+      "JAN",
+      "FEB",
+      "MAR",
+      "APR",
+      "MAY",
+      "JUN",
+      "JUL",
+      "AUG",
+      "SEP",
+      "OCT",
+      "NOV",
+      "DEC"
+    ],
+    "datasets": [
+      {
+        "label": "sales",
+        "data": [
+          3000, 2700, 4500, 5000, 3300, 3800, 4700, 4900, 3500, 4800, 3000, 4300
+        ],
+        "borderWidth": 4.34,
+        "borderColor": "rgba(250, 193, 217, 1)"
+      },
+      {
+        "label": "revenue",
+        "data": [
+          2000, 2700, 2200, 3200, 2300, 2800, 2700, 2900, 2500, 2800, 2000, 2900
+        ],
+        "borderWidth": 2.01,
+        "borderColor": "rgba(217, 217, 217, 1)"
+      }
+    ]
+  },
+  "weekly": {
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
+    "datasets": [
+      {
+        "label": "sales",
+        "data": [800, 1200, 950, 1300],
+        "borderWidth": 4.34,
+        "borderColor": "rgba(250, 193, 217, 1)"
+      },
+      {
+        "label": "revenue",
+        "data": [600, 900, 700, 1000],
+        "borderWidth": 2.01,
+        "borderColor": "rgba(217, 217, 217, 1)"
+      }
+    ]
+  },
+  "daily": {
+    "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    "datasets": [
+      {
+        "label": "sales",
+        "data": [120, 150, 100, 200, 180, 90, 140],
+        "borderWidth": 4.34,
+        "borderColor": "rgba(250, 193, 217, 1)"
+      },
+      {
+        "label": "revenue",
+        "data": [80, 120, 90, 160, 150, 60, 110],
+        "borderWidth": 2.01,
+        "borderColor": "rgba(217, 217, 217, 1)"
+      }
+    ]
+  }
 }

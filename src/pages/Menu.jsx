@@ -1,7 +1,9 @@
+import Categories from "../components/menu/Categories";
+
 const Menu = () => {
   return (
-    <div>
-      <div className="text-white">Menu</div>
+    <div className="pt-[42px]">
+      <Categories />
     </div>
   );
 };

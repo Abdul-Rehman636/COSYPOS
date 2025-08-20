@@ -96,7 +96,7 @@ const Header = ({ openSidebar, toggleSidebar }) => {
           />
         </NavLink>
 
-        <p className="text-[16px] font-medium text-white">Dashboard</p>
+        <p className="text-[16px] font-medium text-white">{pageName}</p>
       </span>
     </div>
   );

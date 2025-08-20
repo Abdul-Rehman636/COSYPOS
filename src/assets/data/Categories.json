@@ -1,32 +1,30 @@
 [
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "All",
+    "items": 116
   },
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "Pizza",
+    "items": 20
   },
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "Burger",
+    "items": 15
   },
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "Chicken",
+    "items": 10
   },
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "Bakery",
+    "items": 18
   },
   {
-    "icon": "",
-    "name": "",
-    "items": 0
+    "name": "Beverage",
+    "items": 12
+  },
+  {
+    "name": "Seafood",
+    "items": 16
   }
 ]

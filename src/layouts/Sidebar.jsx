@@ -7,13 +7,13 @@ const Sidebar = ({ handleCloseSidebar }) => {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col justify-between items-center lg:w-[171px] lg:h-full lg:min-h-screen bg-[#292C2D] lg:rounded-tr-[30px] lg:rounded-br-[30px] font-poppins relative z-[9999] lg:py-8 pb-10 pt-0">
-      <div className="max-[1024px]:w-full">
+    <div className="flex flex-col justify-between items-center lg:w-[171px] lg:h-screen lg:min-h-screen bg-[#292C2D] lg:rounded-tr-[30px] lg:rounded-br-[30px] font-poppins relative z-[9999] lg:py-8 pb-10 pt-0">
+      <div className="max-[1024px]:w-full lg:h-[78%]">
         <p className="lg:block hidden text-[20px] font-semibold text-[#FAC1D9] text-center">
           COSYPOS
         </p>
 
-        <div className="flex flex-col items-center lg:h-[75%] max-[1024px]:w-full lg:overflow-y-auto no-scrollbar mt-7">
+        <div className="flex flex-col items-center lg:h-[94%] max-[1024px]:w-full lg:overflow-y-auto no-scrollbar mt-7">
           {NavigationTabs.map((navTab, index, array) => {
             const lastObject = index === array.length - 1;
 

@@ -67,7 +67,7 @@ const Header = ({ openSidebar, toggleSidebar }) => {
               className="w-full h-full rounded-full"
             />
           </span>
-          <span className="cursor-pointer">
+          <span className="lg:hidden block cursor-pointer">
             <input
               type="checkbox"
               id="checkbox"

@@ -7,7 +7,7 @@ import DashboardStats from "../../assets/data/DashboardStats.json";
 
 const Stats = () => {
   return (
-    <div className="lg:mt-10 md:mt-9 mt-7 lg:mr-16 max-[1024px]:w-[95%] max-[1024px]:ml-auto max-[1024px]:overflow-x-auto no-scrollbar">
+    <div className="lg:mt-10 md:mt-9 mt-7 lg:mr-12 max-[1024px]:w-[95%] max-[1024px]:ml-auto max-[1024px]:overflow-x-auto no-scrollbar">
       <div className="flex lg:grid xl:grid-cols-3 lg:grid-cols-2 lg:gap-10 gap-6 font-poppins max-[1024px]:min-w-max">
         {DashboardStats.map((stat, index) => {
           const sign =

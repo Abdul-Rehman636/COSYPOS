@@ -35,7 +35,9 @@ function App() {
       ) : (
         ""
       )}
-      <div className={`${routes === PrivateRoutes ? "lg:w-[90%]" : ""} w-full`}>
+      <div
+        className={`${routes === PrivateRoutes ? "lg:pl-[166px]" : ""} w-full`}
+      >
         {routes === PrivateRoutes ? (
           <Header openSidebar={openSidebar} toggleSidebar={toggleSidebar} />
         ) : (

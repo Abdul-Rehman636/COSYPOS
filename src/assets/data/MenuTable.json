@@ -1,0 +1,63 @@
+{
+  "head": [
+    {
+      "name": "Product"
+    },
+    {
+      "name": "Product Name"
+    },
+    {
+      "name": "Item ID"
+    },
+    {
+      "name": "Stock"
+    },
+    {
+      "name": "Category"
+    },
+    {
+      "name": "Price"
+    },
+    {
+      "name": "Availability"
+    }
+  ],
+  "body": [
+    {
+      "productImage": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "productName": "Chicken Parmesan",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+      "itemID": 22314644,
+      "stock": 119,
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "productImage": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "productName": "Chicken Parmesan",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+      "itemID": 22314644,
+      "stock": 119,
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "productImage": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "productName": "Chicken Parmesan",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+      "itemID": 22314644,
+      "stock": 119,
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "productImage": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "productName": "Chicken Parmesan",
+      "productDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
+      "itemID": 22314644,
+      "stock": 119,
+      "category": "Chicken",
+      "price": 55
+    }
+  ]
+}

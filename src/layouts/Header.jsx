@@ -29,7 +29,7 @@ const Header = ({ openSidebar, toggleSidebar }) => {
       : "";
 
   return (
-    <div className="lg:w-auto w-[90%] mx-auto font-poppins lg:pt-11 pt-4 lg:mr-14">
+    <div className="lg:w-auto w-[90%] mx-auto font-poppins lg:pt-11 pt-4 lg:pl-[164px] lg:mr-14">
       <div className="flex justify-between items-center">
         <p className="lg:hidden block text-[20px] font-semibold text-[#FAC1D9]">
           COSYPOS

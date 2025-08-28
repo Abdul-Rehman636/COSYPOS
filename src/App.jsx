@@ -41,15 +41,21 @@ function App() {
         ) : (
           ""
         )}
-        <Routes>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              element={<route.component />}
-            />
-          ))}
-        </Routes>
+        <div
+          className={`${
+            openSidebar ? "max-[1024px]:hidden" : "max-[1024px]:block"
+          }`}
+        >
+          <Routes>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                element={<route.component />}
+              />
+            ))}
+          </Routes>
+        </div>
       </div>
     </div>
   );

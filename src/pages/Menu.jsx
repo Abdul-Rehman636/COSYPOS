@@ -21,15 +21,18 @@ const Menu = () => {
       <div className="lg:pl-[123px] overflow-x-auto w-full">
         <Table activeTab={activeTab} />
       </div>
-      <button className="lg:hidden block text-[12px] font-medium text-[#333333] font-poppins px-[22px] py-[14px] bg-[#FAC1D9] rounded-[7.5px] my-8 mx-auto">
+      <button
+        className="lg:hidden block text-[12px] font-medium text-[#333333] font-poppins px-[22px] py-[14px] bg-[#FAC1D9] rounded-[7.5px] my-8 mx-auto"
+        onClick={() => setShowModal(true)}
+      >
         Add New items
       </button>
       <div
         className={`${
           showModal ? "block" : "hidden"
-        } w-full fixed left-0 lg:top-0 top-28 lg:z-50`}
+        } w-full fixed left-0 top-0 lg:z-50`}
       >
-        <AddNewCategory />
+        <AddNewCategory setShowModal={setShowModal} />
       </div>
     </div>
   );

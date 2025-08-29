@@ -5,14 +5,17 @@ import { GiFullPizza, GiChickenLeg, GiSadCrab } from "react-icons/gi";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { RxDashboard } from "react-icons/rx";
 
-const Categories = () => {
+const Categories = ({ setShowModal }) => {
   const [activeTab, setActiveTab] = useState("All");
 
   return (
     <div className="lg:w-[94%] w-[90%] max-[1024px]:mx-auto font-poppins">
       <div className="flex justify-between items-center">
         <p className="text-[25px] font-medium text-white">Categories</p>
-        <button className="text-[16px] font-medium text-[#333333] py-[14px] px-[22px] bg-[#FAC1D9] rounded-[7.5px] cursor-pointer md:block hidden">
+        <button
+          className="text-[16px] font-medium text-[#333333] py-[14px] px-[22px] bg-[#FAC1D9] rounded-[7.5px] cursor-pointer md:block hidden"
+          onClick={() => setShowModal(true)}
+        >
           Add New Category
         </button>
       </div>
@@ -92,7 +95,10 @@ const Categories = () => {
         })}
       </div>
 
-      <button className="mt-8 mx-auto sm:text-[16px] text-[12px] font-medium text-[#333333] py-[14px] px-[22px] bg-[#FAC1D9] rounded-[7.5px] cursor-pointer md:hidden block">
+      <button
+        className="mt-8 mx-auto sm:text-[16px] text-[12px] font-medium text-[#333333] py-[14px] px-[22px] bg-[#FAC1D9] rounded-[7.5px] cursor-pointer md:hidden block"
+        onClick={() => setShowModal(true)}
+      >
         Add New Category
       </button>
     </div>

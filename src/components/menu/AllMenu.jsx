@@ -1,6 +1,6 @@
 import MenuData from "../../assets/data/AllMenu.json";
 
-const AllMenu = ({ activeTab, setActiveTab }) => {
+const AllMenu = ({ activeTab, setActiveTab, setShowMenuModal }) => {
   return (
     <div className="lg:w-[94%] sm:w-[90%] w-[95%] lg:mx-0 sm:mx-auto max-[640px]:ml-auto font-poppins lg:mt-[4.5rem] mt-14">
       <p className="text-[25px] font-medium text-white">
@@ -24,7 +24,10 @@ const AllMenu = ({ activeTab, setActiveTab }) => {
             );
           })}
         </div>
-        <button className="lg:block hidden text-[16px] font-medium text-[#333333] bg-[#FAC1D9] px-[22px] py-[14px] rounded-[7.5px] cursor-pointer">
+        <button
+          className="lg:block hidden text-[16px] font-medium text-[#333333] bg-[#FAC1D9] px-[22px] py-[14px] rounded-[7.5px] cursor-pointer"
+          onClick={() => setShowMenuModal(true)}
+        >
           Add Menu Item
         </button>
       </div>

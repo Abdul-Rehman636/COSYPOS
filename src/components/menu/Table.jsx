@@ -3,7 +3,7 @@ import { HiOutlinePencil } from "react-icons/hi2";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import TableData from "../../assets/data/MenuTable.json";
 
-const Table = ({ activeTab }) => {
+const Table = ({ activeTab, setShowDeletePopup }) => {
   const [selectedProduct, setSelectedProduct] = useState([]);
 
   const FilteredData = TableData.body.filter(
@@ -111,6 +111,7 @@ const Table = ({ activeTab }) => {
                   <RiDeleteBin6Fill
                     color="#E70000"
                     className="cursor-pointer"
+                    onClick={() => setShowDeletePopup(true)}
                   />
                 </td>
               </tr>

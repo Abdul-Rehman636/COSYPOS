@@ -1,4 +1,6 @@
-const DeletePopup = ({ setShowDeletePopup }) => {
+const DeletePopup = ({ setShowDeletePopup, deleteItem }) => {
+  console.log(deleteItem);
+
   return (
     <div className="w-full min-h-screen h-full bg-[#00000099] flex justify-center items-center font-poppins">
       <div className="md:w-[400px] w-[350px] bg-[#292C2D] flex flex-col items-center p-5 rounded-[8px]">

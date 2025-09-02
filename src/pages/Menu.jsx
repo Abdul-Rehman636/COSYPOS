@@ -11,6 +11,7 @@ const Menu = () => {
   const [showModal, setShowModal] = useState(false);
   const [showMenuModal, setShowMenuModal] = useState(false);
   const [showDeletePopup, setShowDeletePopup] = useState(false);
+  const [deleteItem, setDeleteItem] = useState(0);
 
   return (
     <div className="flex flex-col lg:pt-[42px] md:pt-9 pt-7">
@@ -23,7 +24,11 @@ const Menu = () => {
         />
       </div>
       <div className="lg:pl-[123px] overflow-x-auto w-full">
-        <Table activeTab={activeTab} setShowDeletePopup={setShowDeletePopup} />
+        <Table
+          activeTab={activeTab}
+          setShowDeletePopup={setShowDeletePopup}
+          setDeleteItem={setDeleteItem}
+        />
       </div>
       <button
         className="lg:hidden block text-[12px] font-medium text-[#333333] font-poppins px-[22px] py-[14px] bg-[#FAC1D9] rounded-[7.5px] my-8 mx-auto"
@@ -50,7 +55,10 @@ const Menu = () => {
           showDeletePopup ? "block" : "hidden"
         } w-full fixed left-0 top-0 lg:z-50`}
       >
-        <DeletePopup setShowDeletePopup={setShowDeletePopup} />
+        <DeletePopup
+          deleteItem={deleteItem}
+          setShowDeletePopup={setShowDeletePopup}
+        />
       </div>
     </div>
   );

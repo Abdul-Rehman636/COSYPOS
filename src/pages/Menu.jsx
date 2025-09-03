@@ -56,8 +56,9 @@ const Menu = () => {
         } w-full fixed left-0 top-0 lg:z-50`}
       >
         <DeletePopup
+          name="product"
           deleteItem={deleteItem}
-          setShowDeletePopup={setShowDeletePopup}
+          setDeletePopup={setShowDeletePopup}
         />
       </div>
     </div>

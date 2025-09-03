@@ -1,4 +1,4 @@
-const DeletePopup = ({ setShowDeletePopup, deleteItem }) => {
+const DeletePopup = ({ name, setDeletePopup, deleteItem }) => {
   console.log(deleteItem);
 
   return (
@@ -8,18 +8,18 @@ const DeletePopup = ({ setShowDeletePopup, deleteItem }) => {
           Delete Confirmation
         </p>
         <p className="text-[14px] font-normal text-[#777979] text-center mt-2">
-          Are you sure , you want to delete this product?
+          Are you sure , you want to delete this {name}?
         </p>
         <div className="flex gap-5 mt-6">
           <button
             className="bg-transparent text-[16px] font-medium text-white border-2 border-[#333333] px-9 py-4 rounded-[8px] cursor-pointer"
-            onClick={() => setShowDeletePopup(false)}
+            onClick={() => setDeletePopup(false)}
           >
             Cancel
           </button>
           <button
             className="bg-[#FAC1D9] text-[16px] font-medium text-[#333333] px-9 py-4 rounded-[8px] cursor-pointer"
-            onClick={() => setShowDeletePopup(false)}
+            onClick={() => setDeletePopup(false)}
           >
             Confirm
           </button>

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import RightArrow from "../../assets/svgs/Left-Arrow.svg";
 import imageCover from "../../assets/images/image-cover.png";
+import CategoriesOptions from "../../assets/data/Categories.json";
 
 const AddNewCategory = ({ setShowModal }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -86,6 +87,13 @@ const AddNewCategory = ({ setShowModal }) => {
                   className="w-full text-[16px] font-light text-[#777979] py-5 outline-none cursor-pointer"
                 >
                   <option value="">Select menu</option>
+                  {CategoriesOptions.map((category) => {
+                    return (
+                      <option value={category.name.toLowerCase()}>
+                        {category.name}
+                      </option>
+                    );
+                  })}
                 </select>
               </div>
             </div>

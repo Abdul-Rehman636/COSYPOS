@@ -21,8 +21,8 @@ const Sidebar = ({ handleCloseSidebar }) => {
 
             return (
               <div key={index} className="flex flex-col items-center w-full">
-                <NavLink
-                  to={navTab.path}
+                <a
+                  href={navTab.path}
                   onClick={handleCloseSidebar}
                   className={`${
                     activeTab ? "bg-[#FAC1D9]" : ""
@@ -38,7 +38,7 @@ const Sidebar = ({ handleCloseSidebar }) => {
                   >
                     {navTab.name}
                   </p>
-                </NavLink>
+                </a>
 
                 {!lastObject ? (
                   <div className="w-[50%] lg:w-[88px] border-[0.75px] border-[#3D4142] my-3"></div>

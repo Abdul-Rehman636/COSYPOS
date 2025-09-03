@@ -8,6 +8,14 @@ import { RxDashboard } from "react-icons/rx";
 const Categories = ({ setShowModal }) => {
   const [activeTab, setActiveTab] = useState("All");
 
+  const updatedData = [
+    {
+      name: "All",
+      items: 116,
+    },
+    ...CategoryData,
+  ];
+
   return (
     <div className="lg:w-[94%] w-[90%] max-[1024px]:mx-auto font-poppins">
       <div className="flex justify-between items-center">
@@ -21,7 +29,7 @@ const Categories = ({ setShowModal }) => {
       </div>
 
       <div className="sm:mt-7 mt-4 grid xl:grid-cols-7 md:grid-cols-5 sm:grid-cols-4 grid-cols-2 md:gap-5 gap-4">
-        {CategoryData.map((category, index) => {
+        {updatedData.map((category, index) => {
           return (
             <div
               key={index}

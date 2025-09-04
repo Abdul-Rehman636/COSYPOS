@@ -1,7 +1,7 @@
 const StaffManagement = () => {
   return (
     <div>
-      <div className="text-white">Staff Management</div>
+      <div className="text-white">Staff hello Management</div>
     </div>
   );
 };

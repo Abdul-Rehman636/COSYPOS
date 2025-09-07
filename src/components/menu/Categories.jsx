@@ -17,7 +17,7 @@ const Categories = ({ setShowModal }) => {
   ];
 
   return (
-    <div className="lg:w-[94%] w-[90%] max-[1024px]:mx-auto font-poppins">
+    <div className="lg:mr-14 max-[1024px]:w-[90%] max-[1024px]:mx-auto font-poppins">
       <div className="flex justify-between items-center">
         <p className="text-[25px] font-medium text-white">Categories</p>
         <button

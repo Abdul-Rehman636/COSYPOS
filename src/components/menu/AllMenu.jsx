@@ -2,7 +2,7 @@ import MenuData from "../../assets/data/AllMenu.json";
 
 const AllMenu = ({ activeTab, setActiveTab, setShowMenuModal }) => {
   return (
-    <div className="lg:w-[94%] sm:w-[90%] w-[95%] lg:mx-0 sm:mx-auto max-[640px]:ml-auto font-poppins lg:mt-[4.5rem] mt-14">
+    <div className="lg:mr-14 max-[1024px]:w-[90%] max-[640px]:w-[95%] lg:mx-0 sm:mx-auto max-[640px]:ml-auto font-poppins lg:mt-[4.5rem] mt-14">
       <p className="text-[25px] font-medium text-white">
         Special menu all items
       </p>

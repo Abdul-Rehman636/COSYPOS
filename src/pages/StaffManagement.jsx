@@ -1,7 +1,9 @@
+import StaffActions from "../components/staff/StaffActions";
+
 const StaffManagement = () => {
   return (
     <div>
-      <div className="text-white">Staff hello Management</div>
+      <StaffActions />
     </div>
   );
 };

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "2",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "3",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Leave"
+  },
+  {
+    "id": "4",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "5",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "6",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Absent"
+  },
+  {
+    "id": "7",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "8",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "9",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Present"
+  },
+  {
+    "id": "10",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Absent"
+  },
+  {
+    "id": "11",
+    "name": "Watson Joyce",
+    "role": "Manager",
+    "date": "16-Apr-2024",
+    "timings": "9am to 6pm",
+    "status": "Leave"
+  }
+]

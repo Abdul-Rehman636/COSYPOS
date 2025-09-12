@@ -1,0 +1,525 @@
+{
+  "head": [
+    {
+      "name": "Name"
+    },
+    {
+      "name": "Email"
+    },
+    {
+      "name": "Date"
+    },
+    {
+      "name": "Phone"
+    },
+    {
+      "name": "Age"
+    },
+    {
+      "name": "Salary"
+    },
+    {
+      "name": "Timings"
+    },
+    {
+      "name": "Status"
+    },
+    {
+      "name": ""
+    }
+  ],
+  "body": [
+    {
+      "id": "1",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "details": {
+        "name": "Watson Joyce",
+        "role": "Manager",
+        "image": "https://img.freepik.com/free-photo/medium-shot-man-working-as-real-estate-agent_23-2151064973.jpg?t=st=1757701837~exp=1757705437~hmac=c2c136e25b368e8ab6093c398382f2da15257bca6ce89ca7b59986eba66cdbff&w=2000"
+      },
+      "email": "watsonjoyce112@gmail.com",
+      "phone": "+1 (123) 123 4654",
+      "age": "45",
+      "salary": "2200",
+      "timing": {
+        "startTime": "9am",
+        "endTime": "6pm"
+      },
+      "attendance": [
+        {
+          "date": "2025-09-12T09:00:00.000-05:00",
+          "status": "Present"
+        },
+        {
+          "date": "2025-09-11T09:00:00.000-05:00",
+          "status": "Absent",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-10T09:00:00.000-05:00",
+          "status": "Half Shift",
+          "timings": "9am to 1pm"
+        },
+        {
+          "date": "2025-09-09T09:00:00.000-05:00",
+          "status": "Leave",
+          "timings": "—"
+        },
+        {
+          "date": "2025-09-08T09:00:00.000-05:00",
+          "status": "Present"
+        }
+      ]
+    }
+  ]
+}

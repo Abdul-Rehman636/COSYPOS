@@ -30,8 +30,12 @@ const StaffActions = () => {
             className="min-w-[143px] text-[14px] font-light text-white bg-[#3D4142] px-5 py-4 rounded-[10px] cursor-pointer focus:outline-none appearance-none"
           >
             <option value="">Sort by</option>
-            {options.map((option) => {
-              return <option value={option.value}>{option.name}</option>;
+            {options.map((option, index) => {
+              return (
+                <option key={index} value={option.value}>
+                  {option.name}
+                </option>
+              );
             })}
           </select>
           <svg
@@ -45,9 +49,9 @@ const StaffActions = () => {
             <path
               d="M1.25 0.875L5.5 5.125L9.75 0.875"
               stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
         </div>

@@ -1,31 +1,40 @@
 {
   "head": [
     {
-      "name": "Name"
+      "name": "Name",
+      "for": "Both"
     },
     {
-      "name": "Email"
+      "name": "Email",
+      "for": "Staff Management"
     },
     {
-      "name": "Date"
+      "name": "Date",
+      "for": "Attendance"
     },
     {
-      "name": "Phone"
+      "name": "Phone",
+      "for": "Staff Management"
     },
     {
-      "name": "Age"
+      "name": "Age",
+      "for": "Staff Management"
     },
     {
-      "name": "Salary"
+      "name": "Salary",
+      "for": "Staff Management"
     },
     {
-      "name": "Timings"
+      "name": "Timings",
+      "for": "Both"
     },
     {
-      "name": "Status"
+      "name": "Status",
+      "for": "Attendance"
     },
     {
-      "name": ""
+      "name": "",
+      "for": "Staff Management"
     }
   ],
   "body": [

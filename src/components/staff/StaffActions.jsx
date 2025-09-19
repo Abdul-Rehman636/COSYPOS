@@ -15,7 +15,7 @@ const StaffActions = () => {
   ];
 
   return (
-    <div className="lg:mr-14 lg:ml-auto mx-auto max-[1024px]:w-[90%] flex md:flex-row flex-col justify-between items-center max-[640px]:gap-5 font-poppins lg:mt-14 md:mt-9 mt-7 lg:pl-[166px]">
+    <div className="lg:mr-14 lg:ml-auto mx-auto max-[1024px]:w-[90%] flex sm:flex-row flex-col justify-between items-center max-[640px]:gap-5 font-poppins lg:mt-14 md:mt-9 mt-7 lg:pl-[166px]">
       <p className="max-[640px]:w-full text-[25px] font-medium text-white">
         Staff <span>(22)</span>
       </p>

@@ -18,7 +18,7 @@ const Table = ({ activeTab, setShowDeletePopup, setDeleteItem }) => {
   return (
     <div className="max-h-[600px] overflow-y-auto no-scrollbar">
       <table className="font-poppins w-full max-[1024px]:overflow-x-auto no-scrollbar">
-        <thead className="sticky top-0 bg-[#111315]">
+        <thead className="sticky z-10 top-0 bg-[#111315]">
           <tr>
             <th className="px-2.5 py-2">
               <input

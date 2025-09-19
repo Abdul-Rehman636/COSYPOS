@@ -6,6 +6,7 @@ import Data from "../../assets/data/StaffTable.json";
 
 const Table = ({ setShowDeletePopup, setDeleteItem }) => {
   const [selectedStaff, setSelectedStaff] = useState([]);
+  const [expandedRows, setExpandedRows] = useState([]);
   const [activeTab, setActiveTab] = useState("Staff Management");
 
   const tabs = [
@@ -17,6 +18,21 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
     },
   ];
 
+  const statusOptions = [
+    {
+      name: "Present",
+    },
+    {
+      name: "Absent",
+    },
+    {
+      name: "Half Shift",
+    },
+    {
+      name: "Leave",
+    },
+  ];
+
   const handleTab = (name) => {
     setActiveTab(name);
   };
@@ -24,6 +40,14 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
   const handleDelete = (id) => {
     setDeleteItem(id);
     setShowDeletePopup(true);
+  };
+
+  const toggleRow = (id) => {
+    setExpandedRows((prev) => [...prev, id]);
+  };
+
+  const handleChooseStatus = (id) => {
+    setExpandedRows((prev) => prev.filter((rowId) => rowId !== id));
   };
 
   const filteredHeader = Data.head.filter(
@@ -53,7 +77,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
       </div>
       <div className="w-full max-h-[600px] overflow-y-auto no-scrollbar lg:pl-[123px] overflow-x-auto mt-5">
         <table className="font-poppins w-full max-[1024px]:overflow-x-auto no-scrollbar">
-          <thead className="sticky top-0 bg-[#111315]">
+          <thead className="sticky z-10 top-0 bg-[#111315]">
             <tr>
               <th className="px-2.5 py-2">
                 <input
@@ -91,6 +115,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
             {Data.body.map((body, index) => {
               const dateString = body.attendance[0].date;
               const date = new Date(dateString);
+              const rowId = body.id;
 
               const options = {
                 day: "2-digit",
@@ -102,9 +127,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                 .toLocaleDateString("en-GB", options)
                 .replaceAll(" ", "-");
 
-              const isChecked = selectedStaff.some(
-                (item) => item.id === body.id
-              );
+              const isChecked = selectedStaff.some((item) => item.id === rowId);
               return (
                 <tr
                   key={index}
@@ -123,7 +146,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                             setSelectedStaff((prev) => [...prev, body]);
                           } else {
                             setSelectedStaff((prev) =>
-                              prev.filter((item) => item.id !== body.id)
+                              prev.filter((item) => item.id !== rowId)
                             );
                           }
                         }}
@@ -133,13 +156,13 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                     )}
                   </td>
                   <td className="text-[14px] font-normal text-white text-nowrap lg:px-0 px-3 py-3.5">
-                    #{body.id}
+                    #{rowId}
                   </td>
-                  <td className="flex items-center gap-2.5 lg:px-0 px-3 py-3.5">
+                  <td className="flex items-center gap-2.5 lg:pl-0 lg:pr-0 pl-3 pr-9 py-3.5">
                     <img
                       src={body.details.image}
                       alt="Image"
-                      className="w-[27px] h-[27px] border border-[#FAC1D9] rounded-full"
+                      className="w-[27px] lg:h-[27px] border border-[#FAC1D9] rounded-full object-cover"
                     />
                     <div className="flex flex-col">
                       <p className="text-[14px] font-normal text-white text-nowrap">
@@ -189,7 +212,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                     {body.timing.startTime} to {body.timing.endTime}
                   </td>
                   {activeTab === "Staff Management" ? (
-                    <td className="flex items-center gap-3 lg:px-0 px-3 py-3.5">
+                    <td className="flex items-center gap-3 lg:px-0 px-3 py-3.5 bottom-[9px] relative">
                       <span className="w-[22px] h-[22px] flex justify-center items-center rounded-full bg-[#FAC1D9] cursor-pointer">
                         <IoEye size={14} />
                       </span>
@@ -202,7 +225,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                         size={14}
                         color="#E70000"
                         className="cursor-pointer"
-                        onClick={() => handleDelete(body.id)}
+                        onClick={() => handleDelete(rowId)}
                       />
                     </td>
                   ) : (
@@ -210,18 +233,48 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                   )}
                   {activeTab === "Attendance" ? (
                     <td
-                      className={`w-[130px] text-[14px] font-normal text-white ${
-                        index % 2 === 0 ? "bg-[#292C2D]" : "bg-[#3D4142]"
-                      } rounded-[7.5px] text-nowrap px-[22px] py-3 cursor-pointer`}
+                      className={`xl:px-1 px-2 py-3.5 ${
+                        expandedRows.includes(rowId)
+                          ? "xl:w-[500px] w-[460px]"
+                          : ""
+                      }`}
                     >
-                      <span className="flex justify-between items-center">
-                        {body.attendance[0].status}
-                        <HiOutlinePencil
-                          size={12}
-                          color="white"
-                          className="cursor-pointer"
-                        />
-                      </span>
+                      {expandedRows.includes(rowId) ? (
+                        <div className="flex lg:flex-wrap gap-2">
+                          {statusOptions.map((status, index) => (
+                            <span
+                              key={index}
+                              className={`px-[22px] py-3 rounded-[7.5px] cursor-pointer text-[16px] font-medium text-nowrap ${
+                                status.name === "Present"
+                                  ? "bg-[#FAC1D9] text-black"
+                                  : status.name === "Absent"
+                                  ? "bg-[#FFDF6B] text-black"
+                                  : status.name === "Half Shift"
+                                  ? "bg-[#6BE4FF] text-black"
+                                  : "bg-[#FF6A6A] text-black"
+                              }`}
+                              onClick={() => handleChooseStatus(rowId)}
+                            >
+                              {status.name}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <span
+                          className={`w-[130px] flex justify-between items-center px-[22px] py-3 ${
+                            index % 2 === 0 ? "bg-[#292C2D]" : "bg-[#3D4142]"
+                          } rounded-[7.5px] cursor-pointer text-white`}
+                          onClick={() => toggleRow(rowId)}
+                        >
+                          {" "}
+                          {body.attendance[0].status || "No Status"}{" "}
+                          <HiOutlinePencil
+                            size={12}
+                            color="white"
+                            className="cursor-pointer"
+                          />{" "}
+                        </span>
+                      )}
                     </td>
                   ) : (
                     ""

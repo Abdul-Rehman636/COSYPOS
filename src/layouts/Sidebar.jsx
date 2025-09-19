@@ -7,7 +7,7 @@ const Sidebar = ({ handleCloseSidebar }) => {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col justify-between items-center lg:w-[171px] lg:h-screen lg:min-h-screen h-full bg-[#292C2D] lg:rounded-tr-[30px] lg:rounded-br-[30px] font-poppins relative max-[1024px]:z-[9999] lg:py-8 pb-10 pt-0 lg:fixed">
+    <div className="flex flex-col justify-between items-center lg:w-[171px] lg:h-screen lg:min-h-screen h-full bg-[#292C2D] lg:rounded-tr-[30px] lg:rounded-br-[30px] font-poppins relative max-[1024px]:z-[9999] z-50 lg:py-8 pb-10 pt-0 lg:fixed">
       <div className="max-[1024px]:w-full lg:h-[78%]">
         <p className="lg:block hidden text-[20px] font-semibold text-[#FAC1D9] text-center">
           COSYPOS

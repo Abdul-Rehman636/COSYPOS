@@ -4,7 +4,7 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 import { IoEye } from "react-icons/io5";
 import Data from "../../assets/data/StaffTable.json";
 
-const Table = ({ setShowDeletePopup, setDeleteItem }) => {
+const Table = ({ setShowDeletePopup, setDeleteItem, setShowModal }) => {
   const [selectedStaff, setSelectedStaff] = useState([]);
   const [expandedRows, setExpandedRows] = useState([]);
   const [activeTab, setActiveTab] = useState("Staff Management");
@@ -220,6 +220,7 @@ const Table = ({ setShowDeletePopup, setDeleteItem }) => {
                         size={14}
                         color="white"
                         className="cursor-pointer"
+                        onClick={() => setShowModal(true)}
                       />
                       <RiDeleteBin6Fill
                         size={14}

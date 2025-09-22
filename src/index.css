@@ -74,6 +74,11 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(43%) sepia(6%) saturate(300%) hue-rotate(180deg)
+    brightness(95%) contrast(90%);
+}
+
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;

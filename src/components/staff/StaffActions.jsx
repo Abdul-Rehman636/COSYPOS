@@ -1,4 +1,4 @@
-const StaffActions = () => {
+const StaffActions = ({ setShowModal }) => {
   const options = [
     {
       value: "id",
@@ -20,7 +20,10 @@ const StaffActions = () => {
         Staff <span>(22)</span>
       </p>
       <div className="flex gap-5">
-        <button className="text-[16px] font-medium text-[#333333] bg-[#FAC1D9] px-[22px] py-[14px] rounded-[7.5px] cursor-pointer focus:outline-none">
+        <button
+          className="text-[16px] font-medium text-[#333333] bg-[#FAC1D9] px-[22px] py-[14px] rounded-[7.5px] cursor-pointer focus:outline-none"
+          onClick={() => setShowModal(true)}
+        >
           Add Staff
         </button>
         <div className="relative inline-block">

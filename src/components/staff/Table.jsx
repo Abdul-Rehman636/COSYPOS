@@ -4,7 +4,13 @@ import { RiDeleteBin6Fill } from "react-icons/ri";
 import { IoEye } from "react-icons/io5";
 import Data from "../../assets/data/StaffTable.json";
 
-const Table = ({ setShowDeletePopup, setDeleteItem, setShowModal }) => {
+const Table = ({
+  setShowDeletePopup,
+  setDeleteItem,
+  setShowModal,
+  setShowStaffInfo,
+  setMode,
+}) => {
   const [selectedStaff, setSelectedStaff] = useState([]);
   const [expandedRows, setExpandedRows] = useState([]);
   const [activeTab, setActiveTab] = useState("Staff Management");
@@ -48,6 +54,15 @@ const Table = ({ setShowDeletePopup, setDeleteItem, setShowModal }) => {
 
   const handleChooseStatus = (id) => {
     setExpandedRows((prev) => prev.filter((rowId) => rowId !== id));
+  };
+
+  const handleEdit = () => {
+    setMode("edit");
+    setShowModal(true);
+  };
+
+  const handleViewDetail = () => {
+    setShowStaffInfo(true);
   };
 
   const filteredHeader = Data.head.filter(
@@ -214,13 +229,13 @@ const Table = ({ setShowDeletePopup, setDeleteItem, setShowModal }) => {
                   {activeTab === "Staff Management" ? (
                     <td className="flex items-center gap-3 lg:px-0 px-3 py-3.5 bottom-[9px] relative">
                       <span className="w-[22px] h-[22px] flex justify-center items-center rounded-full bg-[#FAC1D9] cursor-pointer">
-                        <IoEye size={14} />
+                        <IoEye size={14} onClick={handleViewDetail} />
                       </span>
                       <HiOutlinePencil
                         size={14}
                         color="white"
                         className="cursor-pointer"
-                        onClick={() => setShowModal(true)}
+                        onClick={handleEdit}
                       />
                       <RiDeleteBin6Fill
                         size={14}

@@ -11,20 +11,20 @@ import OrderTables from "../pages/OrderTables";
 import Reservation from "../pages/Reservation";
 
 export const PublicRoutes = [
-  { path: "*", component: Login },
-  { path: "/login", component: Login },
-  { path: "/forgot-password", component: ForgotPassword },
+  { path: "*", element: Login },
+  { path: "/login", element: Login },
+  { path: "/forgot-password", element: ForgotPassword },
 ];
 
 export const PrivateRoutes = [
-  { path: "*", component: Dashboard },
-  { path: "/", component: Dashboard },
-  { path: "/notifications", component: Notifications },
-  { path: "/profile", component: Profile },
-  { path: "/menu", component: Menu },
-  { path: "/staff-management", component: StaffManagement },
-  { path: "/inventory", component: Inventory },
-  { path: "/reports", component: Reports },
-  { path: "/order-tables", component: OrderTables },
-  { path: "/reservation", component: Reservation },
+  { path: "*", element: Dashboard },
+  { path: "/", element: Dashboard },
+  { path: "/notifications", element: Notifications },
+  { path: "/profile", element: Profile },
+  { path: "/menu", element: Menu },
+  { path: "/staff-management", element: StaffManagement },
+  { path: "/inventory", element: Inventory },
+  { path: "/reports", element: Reports },
+  { path: "/order-tables", element: OrderTables },
+  { path: "/reservation", element: Reservation },
 ];

@@ -3,7 +3,7 @@ import RightArrow from "../../assets/svgs/Left-Arrow.svg";
 import imageCover from "../../assets/images/image-cover.png";
 import RoleOptions from "../../assets/data/Roles.json";
 
-const AddStaff = ({ setShowModal }) => {
+const AddStaff = ({ mode, setShowModal }) => {
   const imageRef = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
   const [formData, setFormData] = useState({
@@ -51,6 +51,19 @@ const AddStaff = ({ setShowModal }) => {
 
   const handleClose = () => {
     setShowModal(false);
+    setFormData({
+      name: "",
+      image: "",
+      email: "",
+      role: "",
+      phoneNumber: "",
+      salary: "",
+      dateOfBirth: "",
+      startTiming: "",
+      endTiming: "",
+      address: "",
+      details: "",
+    });
   };
 
   return (
@@ -59,7 +72,7 @@ const AddStaff = ({ setShowModal }) => {
         <div className="w-[90%] mx-auto">
           <div className="flex justify-between items-center border-b border-[#5E5E5E] md:pb-6 pb-4">
             <p className="md:text-[25px] text-[20px] font-medium text-white">
-              Add Staff
+              {mode === "edit" ? "Edit" : "Add"} Staff
             </p>
             <span
               className="w-9 h-9 bg-[#3D4142] rounded-full flex justify-center items-center cursor-pointer"

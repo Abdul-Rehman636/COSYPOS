@@ -1,4 +1,4 @@
-const StaffActions = ({ setShowModal }) => {
+const StaffActions = ({ setMode, setShowModal }) => {
   const options = [
     {
       value: "id",
@@ -14,6 +14,11 @@ const StaffActions = ({ setShowModal }) => {
     },
   ];
 
+  const handleAdd = () => {
+    setMode("add");
+    setShowModal(true);
+  };
+
   return (
     <div className="lg:mr-14 lg:ml-auto mx-auto max-[1024px]:w-[90%] flex sm:flex-row flex-col justify-between items-center max-[640px]:gap-5 font-poppins lg:mt-14 md:mt-9 mt-7 lg:pl-[166px]">
       <p className="max-[640px]:w-full text-[25px] font-medium text-white">
@@ -22,7 +27,7 @@ const StaffActions = ({ setShowModal }) => {
       <div className="flex gap-5">
         <button
           className="text-[16px] font-medium text-[#333333] bg-[#FAC1D9] px-[22px] py-[14px] rounded-[7.5px] cursor-pointer focus:outline-none"
-          onClick={() => setShowModal(true)}
+          onClick={handleAdd}
         >
           Add Staff
         </button>

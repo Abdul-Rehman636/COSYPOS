@@ -5,6 +5,7 @@ import Notifications from "../pages/Notifications";
 import Profile from "../pages/Profile";
 import Menu from "../pages/Menu";
 import StaffManagement from "../pages/StaffManagement";
+import StaffDetail from "../pages/StaffDetails";
 import Inventory from "../pages/Inventory";
 import Reports from "../pages/Reports";
 import OrderTables from "../pages/OrderTables";
@@ -23,6 +24,7 @@ export const PrivateRoutes = [
   { path: "/profile", element: Profile },
   { path: "/menu", element: Menu },
   { path: "/staff-management", element: StaffManagement },
+  { path: "/staff-detail/:name", element: StaffDetail },
   { path: "/inventory", element: Inventory },
   { path: "/reports", element: Reports },
   { path: "/order-tables", element: OrderTables },

@@ -8,7 +8,6 @@ import StaffDetail from "../components/staff/staff-detail/StaffDetail";
 const StaffManagement = () => {
   const [showModal, setShowModal] = useState(false);
   const [showDeletePopup, setShowDeletePopup] = useState(false);
-  const [showStaffInfo, setShowStaffInfo] = useState(false);
   const [deleteItem, setDeleteItem] = useState(0);
   const [mode, setMode] = useState("add");
 
@@ -19,16 +18,8 @@ const StaffManagement = () => {
         setShowModal={setShowModal}
         setShowDeletePopup={setShowDeletePopup}
         setDeleteItem={setDeleteItem}
-        setShowStaffInfo={setShowStaffInfo}
         setMode={setMode}
       />
-      <div
-        className={`${
-          showStaffInfo ? "block" : "hidden"
-        } w-full ml-[171px] fixed left-0 top-32 lg:z-50 z-40`}
-      >
-        <StaffDetail />
-      </div>
       <div
         className={`${
           showModal ? "block" : "hidden"

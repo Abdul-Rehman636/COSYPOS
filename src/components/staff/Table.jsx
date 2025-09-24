@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { HiOutlinePencil } from "react-icons/hi2";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import { IoEye } from "react-icons/io5";
@@ -8,12 +9,13 @@ const Table = ({
   setShowDeletePopup,
   setDeleteItem,
   setShowModal,
-  setShowStaffInfo,
   setMode,
 }) => {
   const [selectedStaff, setSelectedStaff] = useState([]);
   const [expandedRows, setExpandedRows] = useState([]);
   const [activeTab, setActiveTab] = useState("Staff Management");
+
+  const navigate = useNavigate();
 
   const tabs = [
     {
@@ -61,8 +63,8 @@ const Table = ({
     setShowModal(true);
   };
 
-  const handleViewDetail = () => {
-    setShowStaffInfo(true);
+  const handleViewDetail = (name) => {
+    navigate(`/staff-detail/${name}`);
   };
 
   const filteredHeader = Data.head.filter(
@@ -229,7 +231,10 @@ const Table = ({
                   {activeTab === "Staff Management" ? (
                     <td className="flex items-center gap-3 lg:px-0 px-3 py-3.5 bottom-[9px] relative">
                       <span className="w-[22px] h-[22px] flex justify-center items-center rounded-full bg-[#FAC1D9] cursor-pointer">
-                        <IoEye size={14} onClick={handleViewDetail} />
+                        <IoEye
+                          size={14}
+                          onClick={() => handleViewDetail(body.details.name)}
+                        />
                       </span>
                       <HiOutlinePencil
                         size={14}

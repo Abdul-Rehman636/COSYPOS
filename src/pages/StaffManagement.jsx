@@ -3,7 +3,6 @@ import StaffActions from "../components/staff/StaffActions";
 import Table from "../components/staff/Table";
 import DeletePopup from "../components/popups/DeletePopup";
 import AddStaff from "../components/modals/AddStaff";
-import StaffDetail from "../components/staff/staff-detail/StaffDetail";
 
 const StaffManagement = () => {
   const [showModal, setShowModal] = useState(false);

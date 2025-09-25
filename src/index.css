@@ -63,6 +63,14 @@
   transform: rotate(180deg);
 }
 
+.word-wrap {
+  word-wrap: break-word;
+}
+
+.staff-image {
+  object-position: center top;
+}
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;

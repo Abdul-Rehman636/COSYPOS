@@ -83,16 +83,16 @@ const Header = ({ openSidebar, toggleSidebar }) => {
           </span>
         </div>
       </div>
-      <span className="lg:hidden flex gap-2.5 mt-4">
+      <span className="lg:hidden flex items-center gap-2.5 mt-4">
         <NavLink
           to="#"
           onClick={() => navigate(-1)}
-          className="w-[22px] h-[22px] bg-[#292C2D] rounded-full flex justify-center items-center"
+          className="md:w-8 w-[22px] md:h-8 h-[22px] bg-[#292C2D] rounded-full flex justify-center items-center"
         >
           <img
             src={LeftArrow}
             alt="LeftArrow"
-            className="lg:w-[7.5px] w-[8px] lg:h-[6.75px] h-[8.25px]"
+            className="md:w-2 w-[8px] md:h-3 h-[8.25px]"
           />
         </NavLink>
 

@@ -55,9 +55,10 @@ const Overview = () => {
         </div>
         <div className="lg:w-auto w-full flex justify-between lg:gap-8">
           <div className="flex items-center md:gap-7 gap-5">
-            {timePeriod.map((period) => {
+            {timePeriod.map((period, index) => {
               return (
                 <button
+                  key={index}
                   className={`md:text-[16px] text-[12px] font-medium h-fit ${
                     activeTab === period.name
                       ? "bg-[#FAC1D9] text-[#333333] md:px-[22px] px-5 md:py-[14px] py-2.5"

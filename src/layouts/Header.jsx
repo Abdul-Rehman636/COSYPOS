@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useMatch } from "react-router-dom";
 import LeftArrow from "../assets/svgs/Left-Arrow.svg";
 import Bell from "../assets/svgs/Bell.svg";
 import SamplePic from "../assets/images/sample-profile-pic.jpg";
@@ -6,6 +6,8 @@ import SamplePic from "../assets/images/sample-profile-pic.jpg";
 const Header = ({ openSidebar, toggleSidebar }) => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const staffMatch = useMatch("staff-detail/:name");
 
   const pageName =
     location.pathname === "/" || location.pathname === "*"
@@ -26,6 +28,8 @@ const Header = ({ openSidebar, toggleSidebar }) => {
       ? "Profile"
       : location.pathname === "/notifications"
       ? "Notifications"
+      : staffMatch
+      ? staffMatch.params.name
       : "";
 
   return (

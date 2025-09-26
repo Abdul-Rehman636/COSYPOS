@@ -87,9 +87,9 @@ const AddNewCategory = ({ setShowModal }) => {
                   className="w-full text-[16px] font-light text-[#777979] py-5 outline-none cursor-pointer"
                 >
                   <option value="">Select menu</option>
-                  {CategoriesOptions.map((category) => {
+                  {CategoriesOptions.map((category, index) => {
                     return (
-                      <option value={category.name.toLowerCase()}>
+                      <option key={index} value={category.name.toLowerCase()}>
                         {category.name}
                       </option>
                     );

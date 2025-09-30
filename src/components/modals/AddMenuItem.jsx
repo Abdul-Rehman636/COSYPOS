@@ -1,9 +1,8 @@
 import { useRef, useState } from "react";
 import RightArrow from "../../assets/svgs/Left-Arrow.svg";
 import imageCover from "../../assets/images/image-cover.png";
-import CategoriesOptions from "../../assets/data/Categories.json";
 
-const AddMenuItem = ({ setShowMenuModal }) => {
+const AddMenuItem = ({ setShowMenuModal, CategoryData = [] }) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const imageRef = useRef(null);
 
@@ -112,7 +111,7 @@ const AddMenuItem = ({ setShowMenuModal }) => {
                   className="w-full text-[16px] font-light text-[#777979] py-5 outline-none cursor-pointer"
                 >
                   <option value="">Select category</option>
-                  {CategoriesOptions.map((category, index) => {
+                  {CategoryData.map((category, index) => {
                     return (
                       <option key={index} value={category.name.toLowerCase()}>
                         {category.name}

@@ -1,0 +1,81 @@
+{
+  "head": [
+    {
+      "name": "Product"
+    },
+    {
+      "name": "Status"
+    },
+    {
+      "name": "Category & Retail Price"
+    },
+    {
+      "name": "Actions"
+    }
+  ],
+  "body": [
+    {
+      "id": 1,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 2,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 3,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 4,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 5,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 6,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    },
+    {
+      "id": 7,
+      "name": "Chicken Parmesan",
+      "image": "https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?cs=srgb&dl=pexels-ella-olsson-572949-3026808.jpg&fm=jpg",
+      "stock": 10,
+      "status": "Active",
+      "category": "Chicken",
+      "price": 55
+    }
+  ]
+}

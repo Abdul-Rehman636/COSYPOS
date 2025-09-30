@@ -13,10 +13,37 @@ const Menu = () => {
   const [showDeletePopup, setShowDeletePopup] = useState(false);
   const [deleteItem, setDeleteItem] = useState(0);
 
+  const CategoryData = [
+    {
+      name: "Pizza",
+      items: 20,
+    },
+    {
+      name: "Burger",
+      items: 15,
+    },
+    {
+      name: "Chicken",
+      items: 10,
+    },
+    {
+      name: "Bakery",
+      items: 18,
+    },
+    {
+      name: "Beverage",
+      items: 12,
+    },
+    {
+      name: "Seafood",
+      items: 16,
+    },
+  ];
+
   return (
     <div className="flex flex-col lg:pt-[42px] md:pt-9 pt-7">
       <div className="lg:pl-[166px] mb-4.5">
-        <Categories setShowModal={setShowModal} />
+        <Categories setShowModal={setShowModal} CategoryData={CategoryData} />
         <AllMenu
           activeTab={activeTab}
           setActiveTab={setActiveTab}
@@ -41,14 +68,20 @@ const Menu = () => {
           showModal ? "block" : "hidden"
         } w-full fixed left-0 top-0 lg:z-50`}
       >
-        <AddNewCategory setShowModal={setShowModal} />
+        <AddNewCategory
+          setShowModal={setShowModal}
+          CategoryData={CategoryData}
+        />
       </div>
       <div
         className={`${
           showMenuModal ? "block" : "hidden"
         } w-full fixed left-0 top-0 lg:z-50`}
       >
-        <AddMenuItem setShowMenuModal={setShowMenuModal} />
+        <AddMenuItem
+          setShowMenuModal={setShowMenuModal}
+          CategoryData={CategoryData}
+        />
       </div>
       <div
         className={`${

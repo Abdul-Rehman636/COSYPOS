@@ -1,11 +1,10 @@
 import { useState } from "react";
-import CategoryData from "../../assets/data/Categories.json";
 import { PiHamburgerFill, PiCookieFill } from "react-icons/pi";
 import { GiFullPizza, GiChickenLeg, GiSadCrab } from "react-icons/gi";
 import { IoFastFoodSharp } from "react-icons/io5";
 import { RxDashboard } from "react-icons/rx";
 
-const Categories = ({ setShowModal }) => {
+const Categories = ({ setShowModal, CategoryData = [] }) => {
   const [activeTab, setActiveTab] = useState("All");
 
   const updatedData = [

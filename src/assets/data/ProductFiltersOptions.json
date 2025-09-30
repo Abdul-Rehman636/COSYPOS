@@ -1,0 +1,39 @@
+[
+  [
+    {
+      "value": "Pizza"
+    },
+    {
+      "value": "Burger"
+    },
+    {
+      "value": "Chicken"
+    },
+    {
+      "value": "Bakery"
+    },
+    {
+      "value": "Beverage"
+    },
+    {
+      "value": "Seafood"
+    }
+  ],
+  [
+    {
+      "value": "InStock"
+    },
+    {
+      "value": "OutOfStock"
+    }
+  ],
+  [
+    { "value": "Piece" },
+    { "value": "Kg" },
+    { "value": "Gram" },
+    { "value": "Litre" },
+    { "value": "ml" },
+    { "value": "Bottle" },
+    { "value": "Can" }
+  ]
+]

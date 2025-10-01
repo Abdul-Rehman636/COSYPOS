@@ -2,7 +2,7 @@ import { HiOutlinePencil } from "react-icons/hi";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import Data from "../../assets/data/InventoryProducts.json";
 
-const ProductTable = ({ setDeleteItem, setShowDeletePopup }) => {
+const ProductTable = ({ setDeleteItem, setShowModal, setShowDeletePopup }) => {
   const handleDelete = (id) => {
     setDeleteItem(id);
     setShowDeletePopup(true);
@@ -89,6 +89,7 @@ const ProductTable = ({ setDeleteItem, setShowDeletePopup }) => {
                   <HiOutlinePencil
                     color="white"
                     className="cursor-pointer w-5 h-5"
+                    onClick={() => setShowModal(true)}
                   />
                   <RiDeleteBin6Fill
                     color="#E70000"

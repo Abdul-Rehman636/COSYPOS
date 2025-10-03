@@ -108,10 +108,17 @@ const AddNewCategory = ({ setShowModal, CategoryData = [] }) => {
             </div>
             <div className="flex justify-end mt-9">
               <div className="flex items-center gap-8">
-                <button className="text-[16px] font-medium text-white underline cursor-pointer">
+                <button
+                  type="button"
+                  className="text-[16px] font-medium text-white underline cursor-pointer"
+                  onClick={() => setShowModal(false)}
+                >
                   Cancel
                 </button>
-                <button className="bg-[#FAC1D9] text-[16px] font-medium text-[#333333] px-[50px] py-[20px] rounded-[10px] cursor-pointer">
+                <button
+                  type="submit"
+                  className="bg-[#FAC1D9] text-[16px] font-medium text-[#333333] px-[50px] py-[20px] rounded-[10px] cursor-pointer"
+                >
                   Save
                 </button>
               </div>

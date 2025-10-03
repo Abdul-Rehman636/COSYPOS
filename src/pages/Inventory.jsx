@@ -9,6 +9,34 @@ const Inventory = () => {
   const [showDeletePopup, setShowDeletePopup] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [deleteItem, setDeleteItem] = useState(0);
+  const [mode, setMode] = useState("add");
+
+  const CategoryData = [
+    {
+      name: "Pizza",
+      items: 20,
+    },
+    {
+      name: "Burger",
+      items: 15,
+    },
+    {
+      name: "Chicken",
+      items: 10,
+    },
+    {
+      name: "Bakery",
+      items: 18,
+    },
+    {
+      name: "Beverage",
+      items: 12,
+    },
+    {
+      name: "Seafood",
+      items: 16,
+    },
+  ];
 
   return (
     <div className="lg:pl-[166px] max-[1024px]:w-[90%] mx-auto lg:mt-14 md:mt-9 mt-7 lg:mr-14 mb-8">
@@ -28,6 +56,7 @@ const Inventory = () => {
             setShowModal={setShowModal}
             setDeleteItem={setDeleteItem}
             setShowDeletePopup={setShowDeletePopup}
+            setMode={setMode}
           />
         </div>
       </div>
@@ -36,7 +65,11 @@ const Inventory = () => {
           showModal ? "block" : "hidden"
         } w-full fixed left-0 top-0 lg:z-50`}
       >
-        <AddInventory setShowModal={setShowModal} />
+        <AddInventory
+          mode={mode}
+          setShowModal={setShowModal}
+          CategoryData={CategoryData}
+        />
       </div>
       <div
         className={`${
